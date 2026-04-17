@@ -1,12 +1,103 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
+<!DOCTYPE html> <!-- essas primeiras informações dizem respeito à versão do HTML (HTML5), -->
+<html lang="pt-BR"> <!-- ao idioma utilizado e ao controle de versão para diferentes dispositivos -->
+<head> <!-- no head temos as informações estruturais da página, não o conteúdo de visualização --> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<body>
-    <h1> Maria Clara </h1>
-    <h2> Bem-vinda ao meu site! </h2>
+</head> 
+<body> <!-- no body temos o que é exibido, de fato, na página -->
+    <header> <!-- Cabeçalho -->
+        <h1> <strong> Desenvolvimento Web - Atividade 01 </strong> </h1> <!-- Primeiro tipo de marcação de título, que tem 6 variações-->
+    </header>
+    <main> <!-- Representa o conteúdo principal da página -->
+        <ul>
+            <li>
+                <section id="introducao"> <!--Criando uma classe própria com "div"-->
+                    <h2> Objetivo: </h2>
+                        <p> Por meio da atividade proposta pelo professor, o intuito desta página
+                        é colocar em prática alguns conhecimentos aprendidos acerca da linguagem de marcação <em> HTML </em> 
+                        em aula, relembrar alguns conceitos já aprendidos anteriormente, de forma autônoma, e apresentar de
+                        forma organizada, estruturas básicas e essenciais da linguagem.
+                        </p>
+                    <div class="nota">
+                        <details open>
+                            <summary>
+                                Clique para mais informações!
+                            </summary>
+                            <p>
+                                O <em> HTML </em> é uma linguagem de marcação e, puro, apresenta todo o conteúdo estruturado, 
+                                mas sem estilos visuais ou comportamentos dinâmicos. O ideal é combinar HTML com CSS para 
+                                estilização e JavaScript para interatividade, em conformidade com o planejamento da disciplina.
+                                </p>
+                        </details>
+                    </div>
+                </section>
+            </li>
+            <li>
+                <section id="Desenvolvimento">
+                    <h2><strong> Desenvolvimento: </strong></h2>
+                        <p> O desenvolviemnto será estruturado como um breve e básico resumo explicativo de conceitos do HTML. </p>
+                </section>
+                <ol>
+                    <li>
+                        <h4> Estrutura básica do documento HTML: </h4>
+                            <ul>
+                                <li> Declaração: !DOCTYPE html </li>
+                                <li> Tags: html, head (com meta charset="UTF-8" e title) e body </li>
+                            </ul>
+                    </li>
+                    <li>
+                        <h4> Elementos semânticos de estrutura: </h4>
+                        <ul>
+                            <li> header: cabeçalho da página. </li>
+                            <li> nav: menu de navegação. </li>
+                            <li> main: conteúdo principal. </li>
+                            <li> section: divisão por temas. </li>
+                            <li> article: conteúdo independnete. </li>
+                            <li> aside: informações complementares. </li>
+                            <li> footer: rodapé.  </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4> Elementos de conteúdo: </h4>
+                        <ul>
+                            <li> Títulos hierárquicos. (h1 a h6) </li>
+                            <li> Parágrafos (p). </li>
+                            <li> Listas ordenadas (ol) e não ordenadas (ul). </li>
+                            <li> Imagens(img com src, alt e title). </li>
+                            <li> Links (a, com atributo  href). </li>
+                            <li> Tabelas (table, tr, th,  td) </li>
+                            <li> Formulários (form, input, label, button). </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4> Elementos de agrupamento: </h4>
+                        <ul>
+                            <li> div: para agrupamento genérico (estilização com definição de classes). </li>
+                            <li> span: para elementos inline. </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4> Comentários em HTML: </h4>
+                        <ul>
+                            <li> A linguagem também permite a utilização de comentários no código, os quais não aparecem na página.</li>
+                        </ul>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <section id="conclusão"></section>        
+                    <h2> Conclusão: </h2>
+                        <p>
+                            Este exercício permitiu consolidar na prática os conceitos de marcação HTML, reforçando a importância de uma estrutura semântica,
+                             bem organizada e acessível. O conhecimento adquirido serve como alicerce para as próximas etapas do desenvolvimento web.
+                        </p> 
+            </li>
+        </ul>
+    </main>
+    <footer>
+        <p><strong> Maria Clara Esquerdo Cunha </strong></p>
+        <p> Todos os direitos reservados. </p>
+    </footer>
 </body>
 </html>
